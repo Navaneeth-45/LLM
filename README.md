@@ -8,29 +8,9 @@ Team Members:
 
 How to run:
 
-To test the model with various reasoning problems, use the provided Inference.ipynb notebook. This notebook is designed to:
-
---> Load the model
---> Run example reasoning prompts
---> Display the outputs for analysis
-
-
----
-base_model: Qwen/Qwen2.5-1.5B-Instruct
-library_name: transformers
-model_name: Qwen2.5-1.5B-thinking-reasoning-model-V0
-tags:
-- generated_from_trainer
-- trl
-- sft
-licence: license
----
-
-# Model Card for Qwen2.5-1.5B-thinking-reasoning-model-V0
-
-This model is a fine-tuned version of [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct).
-It has been trained using [TRL](https://github.com/huggingface/trl).
-
+Steps to follow for inferencing model.
+1. Load the model using HuggingFace's pipeline in text generation mode.
+2. Specify the model name.
 ## Quick start
 
 ```python
@@ -42,12 +22,28 @@ output = generator([{"role": "user", "content": question}], max_new_tokens=128, 
 print(output["generated_text"])
 ```
 
+Alternately you can directly run all the cells in inference.ipynb and change the prompts if needed.
+
+
+---
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+library_name: transformers
+model_name: Qwen2.5-1.5B-thinking-reasoning-model-V0
+
+---
+
+# Model Card for Qwen2.5-1.5B-thinking-reasoning-model-V0
+
+This model is a fine-tuned version of [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct).
+It has been trained using [TRL](https://github.com/huggingface/trl).
+
+
+
 ## Training procedure
 
- 
 
 
-This model was trained with SFT.
+This model was trained with SFT(Supervised fine-tuning LoRA method).
 
 ### Framework versions
 
