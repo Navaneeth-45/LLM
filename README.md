@@ -1,3 +1,18 @@
+Team Members:
+Anudeep Eloori
+Navaneeth Rajarapu
+Satya Narayana
+
+Contributions:
+
+
+How to run:
+
+
+
+
+
+
 ---
 base_model: Qwen/Qwen2.5-1.5B-Instruct
 library_name: transformers
