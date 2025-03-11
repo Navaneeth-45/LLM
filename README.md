@@ -1,16 +1,18 @@
 Team Members:
-Anudeep Eloori
-Navaneeth Rajarapu
-Satya Narayana
 
-Contributions:
+1. Anudeep Eloori,
+2. Navaneeth Rajarapu,
+3. Satya Narayana
+
 
 
 How to run:
 
+To test the model with various reasoning problems, use the provided Inference.ipynb notebook. This notebook is designed to:
 
-
-
+--> Load the model
+--> Run example reasoning prompts
+--> Display the outputs for analysis
 
 
 ---
